@@ -18,7 +18,7 @@ import java.util.List;
 
 public class ProjetDetail {
 
-@OneToOne(mappedBy = "projet")
+@OneToOne(mappedBy = "projetDetail")
 Projet projet;
 
     @Id

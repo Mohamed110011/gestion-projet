@@ -20,10 +20,10 @@ import java.util.Set;
 
 public class Projet {
     @OneToOne
-    ProjetDetail projetDetail;
+    private ProjetDetail projetDetail;
 
     @ManyToMany(mappedBy = "projets")
-    Set<Equipe> equipes=new HashSet<Equipe>();
+    Set<Equipe> equipes=new HashSet<>();
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
