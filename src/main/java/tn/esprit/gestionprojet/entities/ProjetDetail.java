@@ -24,7 +24,7 @@ Projet projet;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    long id;
+    long idProjetDetail;
     String description;
     String technologie;
     long cout;

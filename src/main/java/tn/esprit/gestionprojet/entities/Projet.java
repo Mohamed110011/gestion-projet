@@ -27,6 +27,6 @@ public class Projet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long id;
+    long idProjet;
     String projet;
 }

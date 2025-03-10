@@ -24,7 +24,7 @@ public class Equipe {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long id;
+    long idEquipe;
     String nom;
 
     @Enumerated(EnumType.STRING)
