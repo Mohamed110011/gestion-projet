@@ -3,6 +3,7 @@ package tn.esprit.gestionprojet.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import tn.esprit.gestionprojet.entities.Projet;
 import tn.esprit.gestionprojet.entities.ProjetDetail;
 import tn.esprit.gestionprojet.service.IProjetDetailService;
 
@@ -33,4 +34,5 @@ public class ProjetDetailController {
         projetDetailService.deleteProjetDetail(idProjetDetail);
 
     }
+
 }

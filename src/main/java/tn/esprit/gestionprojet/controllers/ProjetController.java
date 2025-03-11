@@ -27,4 +27,13 @@ void  deleteProjet(@PathVariable long idProjet){
 
 
     }
+    @PutMapping("/affecterProjetToProjetDetail/{idProjet}/{idProjetDetail}")
+    Projet affecterProjetDetailToProjet(@PathVariable long idProjet , @PathVariable long idProjetDetail){
+        return projetService.affecterProjetDetailToProjet(idProjet, idProjetDetail);
+
+    }
+    @PostMapping("/ajouterProjetEtAffecterProjetDetail/{idProjetDetail}")
+    Projet ajouterProjetEtAffecterProjetDetail(@RequestBody Projet projet,@PathVariable long idProjetDetail){
+        return projetService.ajouterProjetEtAffecterProjetDetail(projet,idProjetDetail);
+    }
 }
